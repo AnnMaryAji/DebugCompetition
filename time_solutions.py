@@ -5,7 +5,7 @@ import io
 
 def main():
     print("==================================================")
-    print("⏱️  Timing Solutions (Average of 10 Runs) ...")
+    print("[-] Timing Solutions (Average of 10 Runs) ...")
     print("==================================================")
     
     all_passed = True
@@ -20,7 +20,7 @@ def main():
             result = runner.run(suite)
             
             if not result.wasSuccessful():
-                print(f"Problem {i:02d}: ❌ FAILED tests (cannot time buggy code)")
+                print(f"Problem {i:02d}: [X] FAILED tests (cannot time buggy code)")
                 all_passed = False
                 continue
                 
@@ -35,15 +35,15 @@ def main():
             print(f"Problem {i:02d}:  PASSED - Average Time: {avg_ms:.3f} ms")
             
         except Exception as e:
-            print(f"Problem {i:02d}: ❌ ERROR loading tests ({e})")
+            print(f"Problem {i:02d}: [!] ERROR loading tests ({e})")
             all_passed = False
 
     print("==================================================")
     if not all_passed:
-        print("⚠️  Some problems failed their tests. Please fix all bugs to get timing results.")
+        print("[!] Some problems failed their tests. Please fix all bugs to get timing results.")
         sys.exit(1)
     else:
-        print("🎉 All solutions timed successfully!")
+        print("[Success] All solutions timed successfully!")
         sys.exit(0)
 
 if __name__ == "__main__":
