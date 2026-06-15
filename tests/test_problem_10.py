@@ -38,7 +38,7 @@ class TestProblem10(unittest.TestCase):
     def test_complex_nesting(self):
         self.assertEqual(
             decode_string("3[z]2[2[y]pq4[2[jk]]]"),
-            "zzzyypqjkjkjkjkjkjkjkyypqjkjkjkjkjkjkjkjk"
+            "zzzyypqjkjkjkjkjkjkjkjkyypqjkjkjkjkjkjkjkjk"
         )
 
     def test_bracket_around_everything(self):
