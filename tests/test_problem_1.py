@@ -30,7 +30,7 @@ class TestProblem1(unittest.TestCase):
         self.assertEqual(longest_substring("123412356"), 6)
 
     def test_special_characters(self):
-        self.assertEqual(longest_substring("a!@#a$%^&*"), 8)
+        self.assertEqual(longest_substring("a!@#a$%^&*"), 9)
 
     def test_spaces(self):
         self.assertEqual(longest_substring("abc d e"), 5)

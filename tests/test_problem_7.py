@@ -36,7 +36,7 @@ class TestProblem7(unittest.TestCase):
         self.assertEqual(subarray_sum([10, 2, -2, -20, 10], -10), 3)
 
     def test_alternating(self):
-        self.assertEqual(subarray_sum([1, -1, 1, -1], 1), 4)
+        self.assertEqual(subarray_sum([1, -1, 1, -1], 1), 3)
 
     def test_large_elements(self):
         self.assertEqual(subarray_sum([1000000, -1000000, 5], 5), 2)

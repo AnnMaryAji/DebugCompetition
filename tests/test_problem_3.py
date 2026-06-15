@@ -52,7 +52,7 @@ class TestProblem3(unittest.TestCase):
         self.assertTripletsEqual(three_sum([-2, -2, 0, 2, 2, 0, 0]), [[-2, 0, 2], [0, 0, 0]])
 
     def test_five_elements_multiple(self):
-        self.assertTripletsEqual(three_sum([-3, -1, 0, 1, 2, 4]), [[-3, 1, 2], [-1, 0, 1]])
+        self.assertTripletsEqual(three_sum([-3, -1, 0, 1, 2, 4]), [[-3, 1, 2], [-1, 0, 1], [-3, -1, 4]])
 
 if __name__ == "__main__":
     unittest.main()

@@ -63,7 +63,7 @@ class TestProblem4(unittest.TestCase):
     def test_special_chars(self):
         self.assertGroupsEqual(
             group_anagrams(["a#b", "b#a", "ab#"]),
-            [["a#b", "b#a"], ["ab#"]]
+            [["a#b", "b#a", "ab#"]]
         )
 
     def test_long_words(self):

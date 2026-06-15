@@ -24,7 +24,7 @@ class TestProblem2(unittest.TestCase):
         self.assertEqual(max_area([5, 1, 1, 5]), 15)
 
     def test_peak(self):
-        self.assertEqual(max_area([1, 5, 5, 1]), 3)
+        self.assertEqual(max_area([1, 5, 5, 1]), 5)
 
     def test_large_difference(self):
         self.assertEqual(max_area([10, 1, 1, 10]), 30)
