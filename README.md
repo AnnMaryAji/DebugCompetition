@@ -6,6 +6,14 @@ You will find **10 Python files** in the `problems/` directory. Each file contai
 
 Your task is to fix all the bugs so that the code runs correctly and passes all the test cases.
 
+## Before submitting
+
+1. Update the **README.md** with your:
+
+   * Full Name
+   * Email Address
+   * Phone Number
+
 ---
 
 ## 🚀 Step-by-Step Guide
