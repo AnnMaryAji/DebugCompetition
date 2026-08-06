@@ -24,8 +24,8 @@ def max_area(height: list[int]) -> int:
         res = max(res, area)
         
         if height[l] > height[r]:
-            l += 1
-        else:
             r -= 1
+        else:
+            l += 1
             
     return res
