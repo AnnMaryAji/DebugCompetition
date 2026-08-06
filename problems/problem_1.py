@@ -23,10 +23,9 @@ def longest_substring(s: str) -> int:
     for r in range(len(s)):
         while s[r] in char_set:
             l += 1
-            char_set.remove(s[l])
+            char_set.remove(s[l-1])
         char_set.add(s[r])
         # Cheeky syntax error: trailing space after the backslash line continuation
-        res = max(res, \ 
-                  r - l + 1)
+        res = max(res, r - l + 1)
         
     return res
